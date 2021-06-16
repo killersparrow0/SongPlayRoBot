@@ -88,7 +88,7 @@ def a(client, message):
         )
         print(str(e))
         return
-    m.edit("🔎 𝐅𝐢𝐧𝐝𝐢𝐧𝐠 𝐀 𝐒𝐨𝐧𝐠 🎶 𝐏𝐥𝐞𝐚𝐬𝐞 𝐖𝐚𝐢𝐭 ⏳️ 𝐅𝐨𝐫 𝐅𝐞𝐰 𝐒𝐞𝐜𝐨𝐧𝐝𝐬 [🚀](https://telegra.ph/file/567226678e0542f99c30b.mp4)")
+    m.edit("🔎 𝐅𝐢𝐧𝐝𝐢𝐧𝐠 𝐀 𝐒𝐨𝐧𝐠 🎶 𝐏𝐥𝐞𝐚𝐬𝐞 𝐖𝐚𝐢𝐭 😄 ⏳️ 𝐅𝐨𝐫 𝐅𝐞𝐰 𝐒𝐞𝐜𝐨𝐧𝐝𝐬 [🚀](https://https://telegra.ph/file/b6d492b88e1ea5fa6fef6.mp4)")
     try:
         with youtube_dl.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
@@ -102,7 +102,7 @@ def a(client, message):
         message.reply_audio(audio_file, caption=rep, parse_mode='md',quote=False, title=title, duration=dur, thumb=thumb_name)
         m.delete()
     except Exception as e:
-        m.edit('❌ 𝐄𝐫𝐫𝐨𝐫')
+        m.edit('❌ 𝐄𝐫𝐫𝐨𝐫 𝐓𝐑𝐘 𝐀𝐆𝐀𝐈𝐍 😉')
         print(e)
     try:
         os.remove(audio_file)
